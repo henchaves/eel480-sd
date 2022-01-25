@@ -54,6 +54,9 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VHDL_FILE DEC7SEG.vhd
 set_global_assignment -name VHDL_FILE LAB2.vhd
+set_global_assignment -name VHDL_FILE ADDER4BIT.vhd
+set_global_assignment -name VHDL_FILE FA.vhd
+set_global_assignment -name VHDL_FILE ADDERBCD.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

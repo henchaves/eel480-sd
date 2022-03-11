@@ -5,8 +5,6 @@ USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY LAB2 IS
 	PORT (		
-		G_CLOCK_50  : IN  STD_LOGIC;                     -- 50 MHz       (CLOCK)
-	
 		V_SW        : IN  STD_LOGIC_VECTOR(17 DOWNTO 0); -- SWITCHES     (N / OPT)
 		V_BT        : IN  STD_LOGIC_VECTOR( 3 DOWNTO 0); -- BUTTONS      (SET A / SET B / -- / RESET)
 		
@@ -120,14 +118,6 @@ BEGIN
 					G_LEDR <= V_SW;
 				ELSE -- IF OPT IS PROD
 					-- OUTPUTS PRODUCT OF A AND B
---					INPUT_0(3 DOWNTO 1) <= "111";
---					INPUT_0(0) <= VALUE_OPT;
---					INPUT_1(3 DOWNTO 1) <= "111";
---					INPUT_1(0) <= VALUE_OPT;
---					INPUT_2(3 DOWNTO 1) <= "111";
---					INPUT_2(0) <= VALUE_OPT;
---					INPUT_3(3 DOWNTO 1) <= "111";
---					INPUT_3(0) <= VALUE_OPT;
 					INPUT_0 <= VALUE_PROD( 3 DOWNTO  0);
 					INPUT_1 <= VALUE_PROD( 7 DOWNTO  4);
 					INPUT_2 <= VALUE_PROD(11 DOWNTO  8);

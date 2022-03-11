@@ -16,50 +16,35 @@ BEGIN
 	BEGIN
 		CASE (INPUT) IS
 			WHEN "0000" =>
-				OUTPUT <= "1000000";
-				
+				OUTPUT <= "1000000"; -- 0
 			WHEN "0001" =>
-				OUTPUT <= "1111001";
-				
+				OUTPUT <= "1111001"; -- 1
 			WHEN "0010" =>
-				OUTPUT <= "0100100";
-				
+				OUTPUT <= "0100100"; -- 2
 			WHEN "0011" =>
-				OUTPUT <= "0110000";
-				
+				OUTPUT <= "0110000"; -- 3
 			WHEN "0100" =>
-				OUTPUT <= "0011001";
-				
+				OUTPUT <= "0011001"; -- 4
 			WHEN "0101" =>
-				OUTPUT <= "0010010";
-				
+				OUTPUT <= "0010010"; -- 5
 			WHEN "0110" =>
-				OUTPUT <= "0000010";
-				
+				OUTPUT <= "0000010"; -- 6
 			WHEN "0111" =>
-				OUTPUT <= "1111000";
-				
+				OUTPUT <= "1111000"; -- 7
 			WHEN "1000" =>
-				OUTPUT <= "0000000";
-				
+				OUTPUT <= "0000000"; -- 8
 			WHEN "1001" =>
-				OUTPUT <= "0010000";
-				
+				OUTPUT <= "0010000"; -- 9
 			WHEN "1010" =>
-				OUTPUT <= "0001000";
-				
+				OUTPUT <= "0001000"; -- A
 			WHEN "1011" =>
-				OUTPUT <= "0000011";
-				
+				OUTPUT <= "0000011"; -- b
 			WHEN "1110" =>
-				OUTPUT <= "0010010";
-				
+				OUTPUT <= "0010010"; -- S
 			WHEN "1111" =>
-				OUTPUT <= "0001100";
-				
+				OUTPUT <= "0001100"; -- P
 			WHEN OTHERS =>
-				OUTPUT <= "0000110";
-				
+				OUTPUT <= "0000110"; -- E
 		END CASE;
 	END PROCESS;
 
